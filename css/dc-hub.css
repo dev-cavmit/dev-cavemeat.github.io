@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    color: #F5F0FA;
+    background: #160A1F;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+.top_bar {
+    height: 62px;
+    background: linear-gradient(125deg, #6E356A 15%, #AF3153 40%, #7F243C 55%, #160A1F 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+.top_bar li {
+    color: #F5F0FA;
+    float: left;
+    padding: 20px;
+}
+
+.logo {
+    height: 80px;
+    top: 20%
+}
+
+.email {
+    font-size: 16px;
+    opacity: 0.8;
+    user-select: text;
+    -ms-user-select: text;
+    -webkit-user-select: text;
+}
+.email.send {
+    padding: 0 10px 0 0;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+.center_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.center_content h1 {
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 6vh;
+}
+.center_content .text-outline {
+    color: #0b001a;
+    -webkit-text-stroke: 1px #F5F0FA;
+}
+.center_content p {
+    color: #756f7e;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity .6s ease-in-out;
+    -moz-transition: opacity .6s ease-in-out;
+    -webkit-transition: opacity .6s ease-in-out;
+}
+a:link {
+    color: #007090;
+}
+a:visited {
+    color: #007090;
+}
+a:hover {
+    opacity: 1.0;
+    transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+}
+
+
+@media only screen and (max-height: 680px) {
+    .center_content {
+        top: 40%;
+        left: 40%;
+        transform: translate(-30%, -30%);
+        -ms-transform: translate(-30%, -30%);
+        -webkit-transform: translate(-30%, -30%);
+    }
+    .logo {
+        height: 60px;
+    }
+}
+@media only screen and (max-height: 570px) {
+    .center_content {
+        top: 65%;
+    }
+    .logo {
+        height: 45px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .center_content {
+        transform: translate(-45%, -45%);
+        -ms-transform: translate(-45%, -45%);
+        -webkit-transform: translate(-45%, -45%);
+    }
