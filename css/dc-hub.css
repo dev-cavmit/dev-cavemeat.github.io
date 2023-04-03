@@ -26,6 +26,8 @@ body {
     color: #F5F0FA;
     float: left;
     padding: 2vh;
+    position: relative;
+    left: -1.5vh;
 }
 
 .center_content {
