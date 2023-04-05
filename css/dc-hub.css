@@ -28,7 +28,7 @@ body {
     -ms-user-select: none;
     -webkit-user-select: none;
     color: var(--clr-cold-milk);
-    background: linear-gradient(var(--clr-darker-sky), var(--clr-darker-sky)),
+    background: linear-gradient(var(--clr-night-sky), var(--clr-night-sky)),
     url("https://unblast.com/wp-content/uploads/2018/10/Sky-Stars-Pattern.jpg"),
     url("https://unblast.com/wp-content/uploads/2018/10/Sky-Stars-Pattern.jpg");
     background-blend-mode: normal, hard-light, normal;
@@ -38,7 +38,8 @@ body {
 
 .top_bar {
     height: 6.25svh;
-    background: linear-gradient(125deg, #6E356A 12%, #AF3153 40%, #AF3153 42%, #7F243C 58%, #160A1F 95%);
+    background: linear-gradient(135deg, #6E356A 12%, #AF3153 40%, #AF3153 42%, #7F243C 58%, #160A1F 93%,
+    var(--clr-night-sky) 97%, transparent 100%);
 
     display: flex;
     justify-content: center;
@@ -85,9 +86,9 @@ a:hover {
     top: 10svh;
     left: 35%;
     right: 35%;
-    padding: 3svh;
+    padding: 4svh;
     background: var(--clr-night-sky);
-    backdrop-filter: blur(0.3svh) contrast(95%) sepia(100%) opacity(70%);
+    backdrop-filter: blur(0.15svh) contrast(80%) opacity(95%);
 }
 .center_content h1 {
     margin: 0;
@@ -124,24 +125,25 @@ a:hover {
 
 @media only screen and (max-width: 1200px) {
     .center_content {
-        left: 15%;
-        right: 15%;
+        left: 20%;
+        right: 20%;
     }
-
+}
 @media only screen and (min-height: 1600px) {
     .center_content {
-        left: 15%;
-        right: 15%;
+        left: 10%;
+        right: 10%;
     }
-
+}
 @media only screen and (max-width: 1080px) {
     .center_content {
         left: 8%;
         right: 8%;
     }
-
+}
 @media only screen and (max-width: 960px) {
     .center_content {
         left: 5%;
         right: 5%;
     }
+}
